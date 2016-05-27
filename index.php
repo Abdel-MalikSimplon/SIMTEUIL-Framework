@@ -2,13 +2,14 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8" />
-        <title>SIMTUEIL Framework</title>
+        <title>SIMTEUIL Framework</title>
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
-        <div class="container containerRow">
+        <div class="container">
+
             <div class="bloc bgColorRed ajoutContainer containerColumn">
-                <div class="bloc bgColorYellow">
+                <div class="bloc bgColorYellow ajoutContainer">
 
                 </div>
                 <div class="bloc bgColorGreen">
@@ -28,5 +29,7 @@
 
             </div>
         </div>
+
+
     </body>
 </html>

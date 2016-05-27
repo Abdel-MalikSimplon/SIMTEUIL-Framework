@@ -1,68 +1,99 @@
 html {
-    box-sizing: border-box;
+  box-sizing : border-box;
 }
 
 *,
-*::before,
-*::after {
-    box-sizing: inherit;
+*::after,
+*::before {
+  box-sizing : inherit;
 }
 
-html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
+body,
+html {
+  width   : 100%;
+  height  : 100%;
+  margin  : 0;
+  padding : 0;
 }
 
 body {
-    min-width: 100%;
-    min-height: 100%;
-    font-size: 62.5%;
+  min-width  : 100%;
+  min-height : 100%;
+  font-size  : 62.5%;
 }
 
-/* Container de base */
+/*Container de base*/
 
 .container {
-    display: flex;
-    background-color: rgb(61, 195, 125);
-    height: 100%;
+  display          : flex;
+  height           : 100%;
+  background-color : rgb(61, 195, 125);
 }
 
-/* On change la direction des éléments enfants */
+/*
+  Ajouter un nouveau container pour pouvoir ajouter de nouveau blocs
+  petits-enfants
+*/
+
+.ajoutContainer {
+  display : flex;
+}
+
+/*On change la direction des éléments enfants*/
 
 .containerRow {
-    flex-direction: row;
+  flex-direction : row;
 }
 
 .containerColumn {
-    flex-direction: column;
+  flex-direction : column;
 }
-
 
 .bloc {
-    flex-grow: 0;
-    flex-shrink: 0;
-    flex-basis: 50%;
+  flex-basis  : 50%;
+  flex-grow   : 1;
+  flex-shrink : 1;
 }
 
-/* Ajouter un nouveau container pour pouvoir ajouter de nouveau blocs petits-enfants */
-.ajoutContainer {
-    display: flex;
+.fbs100 {
+  flex-basis : 100%;
 }
 
 .bgColorRed {
-    background-color: #D32F2F;
+  background-color : #D32F2F;
 }
+
 .bgColorOrange {
-    background-color: #F44336;
+  background-color : #F44336;
 }
+
 .bgColorBlack {
-    background-color: #212121;
+  background-color : #212121;
 }
+
 .bgColorYellow {
-    background-color: #FFC107;
+  background-color : #FFC107;
 }
+
 .bgColorGreen {
-    background-color: #388E3C;
+  background-color : #388E3C;
+}
+
+.bgColorBlue {
+  background-color : #00796B;
+}
+
+/*Styles for tutorial*/
+
+.titleTuto {
+  text-align : center;
+  font-size  : 2.9em;
+}
+
+.pTuto {
+  width       : 75%;
+  margin      : auto;
+  text-align  : justify;
+  align-items : center;
+  font-size   : 1.6em;
 }
