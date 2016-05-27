@@ -1,0 +1,68 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 62.5%;
+}
+
+/* Container de base */
+
+.container {
+    display: flex;
+    background-color: rgb(61, 195, 125);
+    height: 100%;
+}
+
+/* On change la direction des éléments enfants */
+
+.containerRow {
+    flex-direction: row;
+}
+
+.containerColumn {
+    flex-direction: column;
+}
+
+
+.bloc {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 50%;
+}
+
+/* Ajouter un nouveau container pour pouvoir ajouter de nouveau blocs petits-enfants */
+.ajoutContainer {
+    display: flex;
+}
+
+.bgColorRed {
+    background-color: #D32F2F;
+}
+.bgColorOrange {
+    background-color: #F44336;
+}
+.bgColorBlack {
+    background-color: #212121;
+}
+.bgColorYellow {
+    background-color: #FFC107;
+}
+.bgColorGreen {
+    background-color: #388E3C;
+}
